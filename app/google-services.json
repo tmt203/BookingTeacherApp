@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "48645615632",
+    "project_id": "booking-teacher-a8c02",
+    "storage_bucket": "booking-teacher-a8c02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48645615632:android:6e73d78cdf12efa5ddda95",
+        "android_client_info": {
+          "package_name": "com.phattrienungdungdidong.bookingteacherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48645615632-4ih7b01c5sb5tecppajg5ptcj08mig3d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phattrienungdungdidong.bookingteacherapp",
+            "certificate_hash": "9315c98d89406cb53882900de1c4a8be70e4f344"
+          }
+        },
+        {
+          "client_id": "48645615632-q8o32ibq3uibm265k517vfui399l793s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTFWYHmOTfc5vrRtzRm2Ie64BUSNLyuYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48645615632-q8o32ibq3uibm265k517vfui399l793s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

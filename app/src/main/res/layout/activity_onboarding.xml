@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".OnboardingActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circleIndicator"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        app:ci_drawable="@drawable/selected_dot"
+        app:ci_drawable_unselected="@drawable/unselected_dot"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="295dp"
+            android:layout_height="54dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="BẮT ĐẦU"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="#677294"
+            android:textSize="14sp"
+            android:text="Bỏ qua" />
+    </LinearLayout>
+</LinearLayout>

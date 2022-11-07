@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".Fragments.SignInFragment">
+
+    <!--  Title  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Chào mừng đã trở lại!"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:text="Chúc bạn có một ngày tốt lành, tràn đầy năng lượng cùng với những giờ học/dạy học thoải mái"
+            android:textAlignment="center"
+            android:textColor="#677294"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!--  Get Input  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnGoogleSignIn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input_text"
+                android:paddingVertical="18dp"
+                android:paddingHorizontal="20dp"
+                android:text="Google"
+                android:textAllCaps="false"
+                android:textColor="#677294"
+                android:textSize="16sp"
+                android:fontFamily="@font/rubik_light"
+                android:drawableLeft="@drawable/ic_google"
+                android:drawablePadding="4dp"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input_text"
+                android:paddingVertical="18dp"
+                android:paddingHorizontal="20dp"
+                android:text="Facebook"
+                android:textAllCaps="false"
+                android:textColor="#677294"
+                android:textSize="16sp"
+                android:fontFamily="@font/rubik_light"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:drawablePadding="4dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/etSignInEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_input_text"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="20dp"
+            app:passwordToggleDrawable="@drawable/ic_hide_password"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieSignInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/bg_input_text"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_gravity="right"
+            android:id="@+id/tvForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu ?"
+            android:textColor="#2196F3"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik"/>
+
+        <ProgressBar
+            android:id="@+id/signInProgressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--  Button  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/rubik_medium"
+            android:paddingVertical="18dp"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/rubik"
+                android:text="Chưa có tài khoản?"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="Đăng ký"
+                android:textColor="#2196F3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

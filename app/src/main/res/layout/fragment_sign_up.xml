@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".Fragments.SignUpFragment">
+
+    <!--  Title  -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="60dp"
+        android:paddingHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Đăng ký tài khoản để kết nối với chúng tôi"/>
+
+        <TextView
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik"
+            android:textColor="#677294"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mọi thông tin mà bạn cung cấp sẽ được bảo mật"/>
+
+    </LinearLayout>
+
+    <!--  Get Input  -->
+    <LinearLayout
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <EditText
+            android:id="@+id/etName"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="16dp"
+            android:background="@drawable/bg_input_text"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="16dp"
+            android:background="@drawable/bg_input_text"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+
+<!--        <EditText-->
+<!--            android:id="@+id/etPassword"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:paddingHorizontal="25dp"-->
+<!--            android:paddingVertical="16dp"-->
+<!--            android:background="@drawable/bg_input_text"-->
+<!--            android:drawableRight="@drawable/ic_hide_password"-->
+<!--            android:drawableTint="@color/icon_showorhide_password_color"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Password"/>-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="20dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/ic_hide_password"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/bg_input_text"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="16dp"
+            android:background="@drawable/bg_input_text"
+            android:inputType="phone"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!--  Button  -->
+    <LinearLayout
+        android:gravity="center"
+        android:paddingHorizontal="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:background="@drawable/rounded_button"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/white"
+            android:paddingVertical="18dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"/>
+
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã có tài khoản?"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="#2196F3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
